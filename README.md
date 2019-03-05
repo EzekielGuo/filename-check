@@ -3,6 +3,10 @@
 
 
 ##以文字形式发送邮件
+
 msg = MIMEText(content_info, 'plain', 'utf-8')
+
+
 ##以html形式发送邮件
+
 msg = MIMEText(content_info, 'html', 'utf-8')
