@@ -23,7 +23,7 @@ def mail(content_info,titles):
         msg['Subject'] = titles  # 邮件的主题，也可以说是标题
 
         server = smtplib.SMTP()
-        server.connect("mail.21nmc.com", 25)
+        server.connect("mail.xx.com", 25)
         server.login(my_sender, my_pass)  # 括号中对应的是发件人邮箱账号、邮箱密码
         server.sendmail(my_sender, [my_user,my_user2,], msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
         server.quit()  # 关闭连接
